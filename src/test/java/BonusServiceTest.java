@@ -10,6 +10,7 @@ public class BonusServiceTest {
         long actual = service.calculate(1_000, true);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void shouldCalculateForRegisteredAndOverLimit() {
         BonusService service = new BonusService();
